@@ -1,0 +1,172 @@
+
+.tips{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: black;
+    border-left: 150px solid green;
+    color: white;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.navbar{
+    padding-left: 150px;
+}
+
+.navbar-brand img{
+    width: 150px;
+    height: 50px;
+}
+
+.nav-item{
+    width: 200px;
+    text-align: center;
+}
+
+.nav_left{
+    width: 180px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    list-style: none;
+    padding: 0;
+}
+.nav_left a{
+    color: black;
+}
+.nav_left a:hover{
+    text-decoration: none;
+}
+.nav_left .title{
+    background-color: #004083;
+    color: white;
+}
+
+.nav_left>div{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #eee;
+    border-bottom: 1px solid #fff;
+}
+
+.main{
+    width: 95%;
+    padding-left: 380px;
+    margin-top: 55px;
+    line-height: 30px;
+}
+
+.main .title{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+}
+
+
+.content{
+    box-sizing: border-box;
+    line-height: 30px;
+    text-indent: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.content1{
+    box-sizing: border-box;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.content1 img{
+    width: 100%;
+}
+
+.item{
+    padding-left: 40px;
+}
+
+.item .title{
+    text-align: left;
+    color: #FF8C00;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 0px;
+
+}
+
+.item div{
+    padding-left: 30px;
+    line-height: 40px;
+}
+
+.item .des{
+    padding-left: 15px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .main{
+        text-align: center;
+    }
+
+    .main div{
+        text-align: left;
+    }
+
+    .main>.title{
+        margin-bottom: 10px;
+        margin-top: 20px;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+    }
+    .item div{
+        padding-left: 0;
+        line-height: 40px;
+    }
+
+    .item .des{
+        padding-left: 0;
+        font-weight: 600;
+    }
+
+
+    .navbar{
+        padding-left: 15px;
+    }
+    .content{
+        padding: 0 10px;
+        margin-bottom: 5px;
+    }
+    .content1{
+        padding: 0 10px;
+        margin-bottom: 5px;
+    }
+
+    .nav_left{
+        position: relative;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main{
+        padding: 0px 10px 0;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+}
