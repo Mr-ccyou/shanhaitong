@@ -4,12 +4,20 @@
     height: 30px;
     line-height: 30px;
     background-color: black;
-    border-left: 150px solid green;
     color: white;
     font-size: 12px;
-    padding-left: 10px;
+    padding-left: 150px;
+    color: gray;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
 }
 
+.fixed-top{
+    top: 30px;
+}
 a{
     color: black;
 }
@@ -26,14 +34,15 @@ a:hover{
 }
 
 .nav-item{
-    width: 200px;
+    width: 150px;
     text-align: center;
 }
 
 #carouselExampleControls{
     width: 90%;
     text-align: center;
-    margin:  0 auto;
+    margin:  100px auto 0;
+
 }
 
 #carouselExampleControls img{
@@ -69,6 +78,31 @@ a:hover{
     display: inline-block;
 }
 
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 70px;
+}
+
+.navbar-brand{
+    margin-right: 50px;
+}
+
+.navbar-nav li{
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav-link {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.active{
+    color: black;
+    background:#D8A66E;
+}
+
 @media screen and (max-width: 1200px) {
 
     .navbar{
@@ -86,4 +120,38 @@ a:hover{
     .nav-item {
         width: 100%;
     }
+
+    .navbar{
+        height: auto;
+    }
+
+    .navbar-brand{
+        margin-right: auto;
+    }
+
+    .navbar-nav li{
+        height: auto;
+    }
+
+    .nav-link {
+        padding-top: auto !important;
+        padding-bottom: auto !important;
+    }
+
+    .active{
+        color: black;
+        background:#D8A66E;
+    }
 }
+
+
+
+
+/*.active{
+    background-color: #D8A66E;
+
+}
+.active a{
+    color: white !important;
+}
+*/
