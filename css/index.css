@@ -15,6 +15,7 @@
     z-index: 2000;
 }
 
+
 .fixed-top{
     top: 30px;
 }
@@ -38,15 +39,14 @@ a:hover{
     text-align: center;
 }
 
-#carouselExampleControls{
-    width: 90%;
+#carouselExampleIndicators{
     text-align: center;
     margin:  100px auto 0;
 
 }
 
-#carouselExampleControls img{
-    width: 80%;
+#carouselExampleIndicators img{
+    /*width: 80%;*/
     /*height: 500px;*/
 }
 
@@ -61,6 +61,16 @@ a:hover{
     font-size: 30px;
     font-weight: 600;
     text-align: center;
+}
+
+.copyright{
+    padding: 20px 0;
+    background-color: #353D42;
+    line-height: 30px;
+    width: 100%;
+    color: #ccc;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .product img{
@@ -109,7 +119,7 @@ a:hover{
         padding-left: 15px;
     }
 
-    #carouselExampleControls img{
+    #carouselExampleIndicators img{
         height: 175px;
     }
 

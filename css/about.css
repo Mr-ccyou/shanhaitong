@@ -146,6 +146,16 @@
     background:#D8A66E;
 }
 
+.copyright{
+    padding: 20px 0;
+    background-color: #353D42;
+    line-height: 30px;
+    width: 100%;
+    color: #ccc;
+    text-align: center;
+    margin-top: 50px;
+}
+
 
 
 
