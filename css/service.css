@@ -51,16 +51,49 @@
 .nav_left .title{
     background-color: #004083;
     color: white;
+    height: 60px;
+    line-height: 60px;
+}
+
+.nav-list>div{
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    text-align: center;
+    background: #F7F6F5;
+    border-bottom: 1px solid white;
+}
+
+.nav-title{
+    background: #EEEEF0;
+}
+
+.nav_left .type{
+    position: relative;
+}
+
+.nav_left img{
+    width: 12px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    transform: translateY(-50%);
+
 }
 
 .nav_left>div{
     width: 100%;
-    height: 60px;
-    line-height: 60px;
+    /*height: 60px;*/
+    /*line-height: 60px;*/
     text-align: center;
     cursor: pointer;
-    background-color: #eee;
     border-bottom: 1px solid #fff;
+}
+
+.nav_left .nav-title{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
 }
 
 #img{

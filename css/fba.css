@@ -27,6 +27,19 @@
     height: 50px;
 }
 
+
+.space{
+    text-indent: 30px;
+}
+
+.margin{
+    margin: 20px 0;
+}
+
+.brown{
+    color: #E4A36B;
+}
+
 .nav-item{
     width: 150px;
     text-align: center;

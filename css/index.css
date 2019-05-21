@@ -16,8 +16,6 @@
 }
 
 
-
-
 .fixed-top{
     top: 30px;
 }
@@ -36,6 +34,13 @@ a:hover{
     height: 50px;
 }
 
+.spe{
+    height: 657px;
+}
+
+.w-100{
+    /*height: 600px;*/
+}
 .nav-item{
     width: 150px;
     text-align: center;
@@ -49,7 +54,7 @@ a:hover{
 
 #carouselExampleIndicators img{
     /*width: 80%;*/
-    /*height: 500px;*/
+    /*height: 600px;*/
 }
 
 .product{
@@ -115,6 +120,13 @@ a:hover{
     background:#D8A66E;
 }
 
+.col-sm a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
 @media screen and (max-width: 1200px) {
 
     .navbar{
@@ -158,12 +170,3 @@ a:hover{
 
 
 
-
-/*.active{
-    background-color: #D8A66E;
-
-}
-.active a{
-    color: white !important;
-}
-*/

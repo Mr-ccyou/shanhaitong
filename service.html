@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/service.css">
 </head>
-<body >
+<body>
     <!-- tip start -->
     <div class="tips">你好,欢迎来到山海通官网!</div>
     <!-- tip end -->
@@ -30,10 +30,10 @@
                     <a class="nav-link" href="./about.html">山海通简介</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="./service.html">服务渠道</a>
+                    <a class="nav-link" href="./service.html?type='美国空加派'">服务渠道</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./fba.html">美国FBA专区</a>
+                    <a class="nav-link" href="./fba.html">货物入仓提醒</a>
                 </li>
             </ul>
         </div>
@@ -43,30 +43,62 @@
     <!-- navleft start -->
     <div class="nav_left">
         <div class="title">服务渠道</div>
-        <div onclick="toggle(event)" class="type">国际快递</div>
-        <div onclick="toggle(event)" class="type">美国空加派</div>
-        <div onclick="toggle(event)" class="type">美国海运</div>
-        <div onclick="toggle(event)" class="type">美国海外仓</div>
+
+        <div class="type">
+            <div class="nav-title">
+                <span>美国FBA专线</span>
+                <img src="./images/drop.svg">
+            </div>
+            <div class="nav-list" style="display: none;">
+                <div>美国空加派</div>
+                <div>美国海运</div>
+                <div>美国发货常见问答</div>
+            </div>
+        </div>
+
+        <div class="type">
+            <div class="nav-title">
+                <span>欧洲FBA专线</span>
+                <img src="./images/drop.svg">
+            </div>
+            <div class="nav-list" style="display: none;">
+                <div>欧洲空加派</div>
+                <div>欧洲海运</div>
+                <div>欧洲发货常见问答</div>
+            </div>
+        </div>
+
+        <div class="type">
+            <div class="nav-title">
+                <span>日本FBA专线</span>
+                <img src="./images/drop.svg">
+            </div>
+            <div class="nav-list" style="display: none;">
+                <div>日本空加派</div>
+                <div>日本海运</div>
+            </div>
+        </div>
+        <div class="type">
+            <div class="nav-title">
+                <span>加拿大FBA专线</span>
+                <img src="./images/drop.svg">
+            </div>
+            <div class="nav-list" style="display: none;">
+                <div>加拿大空加派</div>
+                <div>加拿大海运</div>
+            </div>
+        </div>
+
+        <div class="type spe" id="spe">
+            <div class="nav-title">
+                <span>国际快递</span>
+            </div>
+        </div>
     </div>
     <!-- navleft end -->
 
-    <!-- FBA认证 start-->
-    <div class="content" style="display: none;">
-        <div class="title">国际快递</div>
-        <div class="text"> 我司是国际四大快递代理之一，规范的操作、强大的系统、合理的价格、充足的仓位，
-        有效助您解决亚马逊FBA头程运输的痛点。UPS国际快递公司是全球知名的快递承运商与包裹递送公司
-        ，服务覆盖220个国家及地区。山海通国际物流与UPS国际快递拥有良好的伙伴关系，
-        是UPS国际快递在国内的一级代理，价格实惠，服务专业，是您的亚马逊FBA头程运输的不二选择，
-        也是我们重点推荐的快递产品。</div>
-        <div class="title">UPS国际快递的主要优势</div>
-        <div><i>✓</i>  服务和价格适中，性价比高，非常适合现阶段国内出口跨境电商卖家对亚马逊FBA头程运输的需求。</div>
-        <div><i>✓</i>  快件清关能力强，服务时效有保障。</div>
-        <div><i>✓</i>  有效解决您对带电产品，包括移动电源和纯电池的物流运输的需求。</div>
-        <img src="http://img.ccyou.xin/transform.png" id="img">
-    </div>
-    <!-- FBA认证 end-->
-
-    <!-- FBA仓库 start-->
+    <!-- 美国 ---------------------->
+    <!-- 美国空加派 start-->
     <div class="content" style="display: none">
         <div class="title">美国空加派</div>
         <div class="text">
@@ -102,10 +134,10 @@
 
         </div>
     </div>
-    <!-- FBA仓库 end-->
+    <!-- 美国空加派 end-->
 
-    <!-- 发货常见问答 start-->
-    <div class="content" style="display: none">
+    <!-- 美国海运 start-->
+     <div class="content" style="display: none">
         <div class="title">美国海运</div>
         <div class="text" style="margin-bottom: 10px">
             山海通国际物流已完成深圳至美国的海运渠道搭建，并与全球TOP10的船东均有良好的合作，
@@ -130,28 +162,214 @@
         <div><i>✓</i>  每周日下午船舶抵达长滩，周一上午收货人可以提货。</div>
         <img src="http://img.ccyou.xin/sea.png" id="img">
     </div>
-    <!-- 发货常见问答 end-->
+    <!-- 美国海运 end-->
 
-    <!-- 发货常见问答 start-->
+    <!-- 美国发货常见问答 start-->
     <div class="content imgs" style="display: none">
         <img src="http://img.ccyou.xin/store.png">
 
-        <div style="margin:0 auto 20px; width: 90%; text-align: left;" class="text" >为了在美国实现为跨境卖家提供全方位闭环服务，
+        <div style="margin:0 auto 20px; width: 90%; text-align: left;" class="text" >为了在欧洲实现为跨境卖家提供全方位闭环服务，
         实现真正的中-美供应链一条龙服务，山海通整合渠道资源，
-        在美国本土自建4个海外仓，分布在美国洛杉矶、 休斯敦  、
+        在欧洲本土自建4个海外仓，分布在美国洛杉矶、 休斯敦  、
         亚特兰大、纽约4个美国主要城市和地区，形成实力强大且独具特色的美国本土海外仓辐射网。</div>
         <img src="http://img.ccyou.xin/product_1.png">
         <img src="http://img.ccyou.xin/car.png">
         <img src="http://img.ccyou.xin/house.png">
     </div>
-    <!-- 发货常见问答 end-->
+    <!-- 美国发货常见问答 end-->
+    <!-- 美国 ---------------------->
 
-    <footer class="copyright">
+
+     <!-- 欧洲 ---------------------->
+    <!-- 欧洲空加派 start-->
+    <div class="content" style="display: none">
+        <div class="title">欧洲空加派</div>
+        <div class="text">
+            欧洲专线空加派是山海通利用自有广州和香港包板仓位安排的在英国清关，再派送欧洲其他国家的空加派特色产品，全程时效6-9个工作日。
+        </div>
+        <div class="title">欧洲FBA专线产品优势</div>
+        <div>1、 我司自有包板仓位，旺季仓位保障力度极高，运输时效基本和淡季等同；</div>
+        <div>2、 英国多年的清关经验，对多品名多类别产品清关，经验丰富，速度快;</div>
+        <div>3、 山海通自有税号，解决客户欧洲无税号的问题;</div>
+        <div>4、 后段使用快递派送，全程上网跟踪轨迹，派送时效稳定，送FBA仓库无需预约。</div>
+
+        <div class="title">欧洲空运常见问答</div>
+        <div class="item" >
+            <div class="question">使用欧洲专线需提供什么资料？</div>
+            <div class="answer" style="display: none"> 按照我司提供的箱单发票模板填写的箱单发票，如果有特殊清关要求需提前告知。</div>
+        </div>
+        <div class="item">
+            <div class="question">欧洲那些类别的产品清关会有特殊要求？</div>
+            <div class="answer" style="display: none"> 根据我司多年欧洲的清关经验，手机、自行车及其配件、纺织品、鞋子、蓝牙产品、电器类大件产品、部分LED产品清关会有特殊要求（关税较高或有反倾销税或需要提供认证证书），具体发货前请咨询我司客服同事。</div>
+        </div>
+        <div class="item">
+            <div class="question">带磁性的货物发空运要注意哪些事项？</div>
+            <div class="answer" style="display: none">
+                带磁性货物不属于普通货物，因磁场的干扰可能影响飞行安全，所以航空公司要求带磁性的货物必须出具磁性检测报告，合理才可以上飞机。
+                <div>磁性检测报告有如下要求：</div>
+                <div style="padding-left: 10px;">1、磁性报告是一次性报告，不可以多次使用。</div>
+                <div style="padding-left: 10px;">2、无磁性货物和磁性货物混装的，必须全部货物都要做磁性鉴定，不可以只是带磁性的货物做鉴定。</div>
+                <div style="padding-left: 10px;">3、磁性鉴定报告不可以提前做，必须货到机场现场测量后才能做，报告出具时间约2个小时。</div>
+                <div style="padding-left: 10px;">4、磁性报告费用统一收费为450元/票（50箱以内），超过50箱每箱加1.5元，如80箱货收费为：450+30*1.5=495。</div>
+            </div>
+        </div>
+    </div>
+    <!-- 欧洲空加派 end-->
+
+    <!-- 欧洲海运 start-->
+    <div class="content" style="display: none">
+        <div class="title">欧洲海运</div>
+        <div class="text">
+        山海通国际物流已完成深圳至欧洲的海运渠道搭建，并与全球TOP10的船东均有良好的合作，
+        能够为客户提供海运整箱和拼箱出口服务，到达英国/德国目的地后，本地派送方式灵活多样，
+        操作团队熟知亚马逊仓库的预约与入仓等流程。
+        </div>
+        <div class="title">欧洲海运优势</div>
+
+        <div>1、正规，我司欧洲只走自有VAT渠道，不走包税渠道，可单独提供IEN，C88文件。</div>
+        <div>2、英国海运专线英国南安普顿/费利克斯托清关，德国海运专线在德国汉堡清关，不存在在欧洲其他位置清关情况，德国可做一般贸易报关，可做出口退税。</div>
+        <div>3、目的港监管仓清关，单票清关，避免因单家货物被查导致的连带作用。</div>
+        <div>4、头程海运选用优质船东，船开后25-28天到目的港，尾端采用快递派送/卡派（视情况而定），时效有保障。</div>
+        <div>5、无隐含收费，所有费用列明或提前告知。</div>
+
+    </div>
+    <!-- 欧洲海运 end-->
+
+    <!-- 欧洲发货常见问答 start-->
+    <div class="content" style="display: none">
+        <div class="title">欧洲发货常见问答</div>
+         <div class="item">
+            <div class="question">如何计费，按体积还是重量？</div>
+            <div class="answer" style="display: none"> 按方收费，不足一方按一方，同时；按1：363计费，一体积对应363千克，例如：1000千克/1CBM，如果是去英国，按2.755方来收费。</div>
+        </div>
+        <div class="item">
+            <div class="question">截货时间？</div>
+            <div class="answer" style="display: none"> 目前我司推出欧洲海运专线，英国三截三开、德国二截一开，如有发货需求，请在截货之前联系我司业务，安排车子拖货。</div>
+        </div>
+        <div class="item">
+            <div class="question">关税是怎么收取的？</div>
+            <div class="answer" style="display: none"> 必须做关税预付，我司预收取申报货值*30%关税，同时凭税单实报实销，多退少补；收取垫付税金手续费：按税金金额的2.5%，最低GBP30。</div>
+        </div>
+        <div class="item">
+            <div class="question">欧洲那些类别的产品清关会有特殊要求？</div>
+            <div class="answer" style="display: none"> 根据我司多年欧洲的清关经验，手机、自行车及其配件、纺织品、鞋子、蓝牙产品、电器类大件产品、部分LED产品清关会有特殊要求（关税较高或有反倾销税或需要提供认证证书），具体发货前请咨询我司客服同事。</div>
+        </div>
+        <img src="http://img.ccyou.xin/sea.png" id="img">
+    </div>
+    <!-- 欧洲发货常见问答 end-->
+    <!-- 欧洲 ---------------------->
+
+
+
+    <!-- 日本 ---------------------->
+    <!-- 日本空加派 start-->
+    <div class="content" style="display: none">
+        <div class="title">日本空加派</div>
+        <div class="text">
+         日本FBA头程专线是我司继美国和欧洲专线后，
+         整合航空资源和日本的进口清关与派送资源，联合日本佐川急便（SAGAWA）搭建专线产品。
+         服务日本全境，包括亚马逊FBA仓、第三方海外仓及其他商业或私人地址。时效堪比快递，服务稳定。
+        </div>
+
+        <div class="title">日本FBA头程空运产品优势</div>
+         <div><i>✓</i>  每天深圳或香港直飞航班，全年参考时效3-5天；</div>
+        <div><i>✓</i>  交货后立马生成转单号，1天提取，全程可在www.sagawa-sgx.cn跟踪；</div>
+        <div><i>✓</i>  价格低廉，体积重除6000；</div>
+        <div><i>✓</i>  无须客户提供进口商；</div>
+        <div><i>✓</i>  7天左右提供税单；</div>
+        <div><i>✓</i>  佐川急便快递公司清关，绿色通道，快速稳定；</div>
+        <div><i>✓</i>  可走带磁产品</div>
+
+        <div class="title">日本空运常见问答</div>
+
+        <div class="item">
+            <div class="question">厨房用具你们接收么</div>
+            <div class="answer" style="display: none">
+                不接受侵犯知识产权的产品。禁止出口违法及管制物品（毒品，军火，烟，酒等等）
+                不接产品：厨房用具、水壶、水杯、咖啡壶、烤肉网、餐具、刀、搅拌器、榨汁机等等）这些直接接触食物的物品
+                （装吃的产品）.....以及按摩器、美容仪、洗牙机、拔火罐 等跟人体有直接接触的器材。
+            </div>
+        </div>
+    </div>
+    <!-- 日本空加派 end-->
+
+    <!-- 日本海运 start-->
+    <div class="content" style="display: none">
+        <div class="title">日本海运</div>
+        <div class="text">
+        山海通国际物流已完成深圳至日本的海运渠道搭建，并与全球TOP10的船东均有良好的合作，
+        能够为客户提供海运整箱和拼箱出口服务，到达目的地后，本地派送方式灵活多样，
+        操作团队熟知亚马逊仓库的预约与入仓等流程。
+        </div>
+        <div class="title">日本海运专线优势</div>
+
+        <div>1、船期丰富，一周至少三水船，时效有保障</div>
+        <div>2、目的地尾程派送车队为多年合作伙伴，专业靠谱，时效稳定。正常签收时效为开船后8-10工作日签收。</div>
+        <img src="http://img.ccyou.xin/sea.png" id="img">
+
+    </div>
+    <!-- 日本海运 end-->
+    <!-- 日本 ---------------------->
+
+
+    <!-- 加拿大 ---------------------->
+    <!-- 加拿大空加派 start-->
+    <div class="content" style="display: none">
+        <div class="title">加拿大空加派</div>
+        <div class="text">
+         加拿大FBA头程空运是山海通除美国空加派专线，欧洲空加派专线以外的又一诚意之作。
+         针对加拿大的地理位置特点，九方物流采取东西分点入境清关，卡车和快递派送相结合的方案打造的新路线，
+         时效稳定，安全高效。
+        </div>
+        <div class="title">加拿大FBA头程空运产品优势</div>
+         <div><i>✓</i>  常年固定包板，航班密集，运力保障；</div>
+        <div><i>✓</i>  性价比高，尤其是普货价格秒杀快递和同类产品；</div>
+        <div><i>✓</i>   快件清关，更快捷，集货清关，更优惠；</div>
+        <div><i>✓</i>   末端快递派送，入仓不延误；</div>
+        <div><i>✓</i>  时效稳定，品名预审，安全保障；</div>
+        <div><i>✓</i>  服务面广（广深港3地均可上门提货）；</div>
+        <div><i>✓</i>  多渠道末端派送：空运+快递派送、空运+卡车派送</div>
+    </div>
+    <!-- 加拿大空加派 end-->
+
+    <!-- 加拿大海运 start-->
+    <div class="content" style="display: none">
+        <div class="title">加拿大海运</div>
+        <div class="text">
+        山海通国际物流已完成深圳至加拿大的海运渠道搭建，并与全球TOP10的船东均有良好的合作，
+        能够为客户提供海运整箱和拼箱出口服务，到达目的地后，本地派送方式灵活多样，
+        操作团队熟知亚马逊仓库的预约与入仓等流程。
+        </div>
+        <div class="title">加拿大海运专线优势</div>
+        <div>1、直航温哥华，开船14天到港，总体时效稳定在25-30天完成签收</div>
+        <div>2、船期稳定，清关稳定，不收敏感货，不冲货，不谎报，不漏报，不低报，货物安全有保障。</div>
+        <img src="http://img.ccyou.xin/sea.png" id="img">
+    </div>
+    <!-- 加拿大海运 end-->
+
+    <!-- 加拿大 ---------------------->
+
+
+    <!-- 国际快递 start-->
+    <div class="content cspe" style="display: none;">
+        <div class="title">国际快递</div>
+        <div class="text"> 我司是国际四大快递代理之一，规范的操作、强大的系统、合理的价格、充足的仓位，
+        有效助您解决亚马逊FBA头程运输的痛点。UPS国际快递公司是全球知名的快递承运商与包裹递送公司
+        ，服务覆盖220个国家及地区。山海通国际物流与UPS国际快递拥有良好的伙伴关系，
+        是UPS国际快递在国内的一级代理，价格实惠，服务专业，是您的亚马逊FBA头程运输的不二选择，
+        也是我们重点推荐的快递产品。</div>
+        <div class="title">UPS国际快递的主要优势</div>
+        <div><i>✓</i>  服务和价格适中，性价比高，非常适合现阶段国内出口跨境电商卖家对亚马逊FBA头程运输的需求。</div>
+        <div><i>✓</i>  快件清关能力强，服务时效有保障。</div>
+        <div><i>✓</i>  有效解决您对带电产品，包括移动电源和纯电池的物流运输的需求。</div>
+        <img src="http://img.ccyou.xin/transform.png" id="img">
+    </div>
+    <!-- 国际快递 end-->
+
+    <footer class="copyright" style="margin-top: 150px;">
         <div>Copyright 2012-2019 深圳市山海通供应链有限公司 版权所有 Powered by ShanHaiTong</div>
-        <div>地址：广东省深圳市龙岗区平湖街道山海商务中心1栋3C  </div>
+        <div>地址：深圳市龙岗区横岗街道101文化创意园8310  </div>
     </footer>
-
-
 
 </body>
 </html>
@@ -164,21 +382,30 @@
 
     $(document).ready(function(){
 
-        $('.type').each(function (index,item) {
+        var type = '美国空加派';
+
+        $('.nav-list>div').each(function (index,item) {
             if(decodeURI(location.href).indexOf(item.innerText) > -1){
                 $(item).css('border-left', '3px solid #004083');
                 $(item).css('background-color', 'white');
+                $(item).parent().css('display', 'block');
                 $($('.content')[index]).css('display', 'block');
-            }else if(decodeURI(location.href).indexOf('?') == -1){
-                $($('.type')[0]).css('border-left', '3px solid #004083');
-                $($('.type')[0]).css('background-color', 'white');
-                $($('.content')[0]).css('display', 'block');
             }else{
                 $(item).css('border-left', 'none');
-                $(item).css('background-color', '#eee');
                 $($('.content')[index]).css('display', 'none');
+
             }
         })
+
+        if(decodeURI(location.href).indexOf($('.spe')[0].innerText.trim()) > -1){
+            $('.spe').css('border-left', '3px solid #004083');
+            $('.spe').css('background-color', 'white');
+            $('.spe').parent().css('display', 'block');
+            $('.cspe').css('display', 'block');
+        }else{
+            $('.spe').css('border-left', 'none');
+            $('.cspe').css('display', 'none');
+        }
 
         $('.item').each(function(index, item) {
 
@@ -190,14 +417,59 @@
                 }
             })
         })
+
+
+        $('.type').each(function(index, item) {
+
+            $(item).click(function(event) {
+
+                var list = $(item).children()[1];
+
+                if(!list) {
+                    type = $(item).children()[0].innerText;
+                    if(decodeURI(location.href).indexOf($(item).children()[0].innerText) > -1) return;
+                    $('.spe').css('border-left', '3px solid #004083');
+                    location.href = location.pathname +'?type='+type;
+                    return
+                }
+
+                if($(list).css('display')=== 'none'){
+                    $(list).css('display','block');
+
+                }else{
+                    $(list).css('display','none');
+                }
+            })
+        })
+
+        $('.nav-list>div').each(function(index, item) {
+            $(item).click(function(e) {
+                e.stopPropagation();
+
+                type = e.target.innerText;
+                $(item).css('border-left', '3px solid #004083');
+
+                $('.nav-list>div').each(function(j, el) {
+                    if (el.innerText !== type) $(el).css('border-left', 'none');
+                })
+
+                $('.spe').css('border-left', 'none');
+
+                if(decodeURI(location.href).indexOf(e.target.innerText) > -1) return;
+
+                $('.content').each(function(i, c) {
+                    if (i === index) {
+                        $(c).css('display', 'block');
+                    } else {
+                        $(c).css('display', 'none');
+                    }
+                })
+
+                location.href = location.pathname +'?type='+type;
+            })
+        })
+
     });
-
-    function toggle(e){
-        if(decodeURI(location.href).indexOf(e.target.innerText) > -1) return;
-        type = e.target.innerText;
-        location.href = location.pathname +'?type='+type;
-    }
-
 
 
 </script>
